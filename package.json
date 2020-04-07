@@ -1,0 +1,24 @@
+{
+  "name": "vonfitbjj",
+  "version": "1.0.0",
+  "description": "Index page for vonfitbjj",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vstrickl/vonfitbjj.git"
+  },
+  "author": "Vonique Stricklen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vstrickl/vonfitbjj/issues"
+  },
+  "homepage": "https://github.com/vstrickl/vonfitbjj#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
+}
