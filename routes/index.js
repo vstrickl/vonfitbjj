@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
       aboutAppt: "Click the link below to schedule a free consultation with me ;)",
       aboutBtn: "SCHEDULE A CALL",
       aboutImg: "/images/me_narrow.jpg",
-      aboutURL: "mailto:von.fit.18@gmail.com",
+      aboutURL: "/contact",
       subTitle: "SIGNUP FOR MY NEWSLETTER",
       subDescription: 
       "Von's mission is to help you reach your goals and help you tap into your own potential. Join our newsletter and receive weekly health guides, fitness videos, and self-defense workshop updates that will help you become the master of your own life.",
