@@ -75,7 +75,7 @@ router.get('/contact', function(req, res) {
 
     brandName:'Von | Fitness & BJJ',
     pageTitle: 'Contact',
-    pageDesc: "I provide daily support to help answer any questions you might have.",
+    pageDesc: "I provide daily support for your questions and appointment scheduling.",
     emailBtn: "EMAIL ME",
     emailURL: "mailto:von.fit.18@gmail.com",
     textBtn: "TEXT ME",
