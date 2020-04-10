@@ -84,4 +84,32 @@ router.get('/contact', function(req, res) {
   });
 })
 
+ // Services
+ router.get('/services', function(req, res) {
+  res.render('pages/services',{
+
+    brandName:'Von | Fitness & BJJ',
+    pageTitle: "",
+    servicesTitle: "SERVICES",
+    ServicesSubtitle:"IN-PERSON OR REMOTE",
+    onlineTitle: "ONLINE FITNESS COACHING",
+    onlineSubtitle:"A PERSONALIZED APPROACH",
+    onlineDescription: "My 1-on-1 Online Coaching is the ultimate expericence that helps you reach your goals from the inside out.",
+    onlineImg: "/images/online.jpg",
+    defenseImg: "/images/workshop.jpg",
+    defenseTitle: "SELF-DEFENSE WORKSHOPS",
+    defenseSubtitle:"GET EMPOWERED",
+    defenseDescription: "Learn the mental and physical aspects of self-defense so you can be a strong, empowered bad @$$.",
+    personalTitle: "IN-PERSON TRAINING",
+    personalSubtitle:"GET THAT EXTRA PUSH",
+    personalDescription: "In-Person training is great for those that need an extra push and my fine eye for correct technique.",
+    personalImg: "/images/personal.jpg",
+    bjjImg: "/images/bjj.jpg",
+    bjjTitle: "NOGI JIUJITSU CLASSES",
+    bjjSubtitle:"THE FOUNDATION",
+    bjjDescription: "Learn Von's Foundational Martial Art behind Self-Defense while making friends and kicking butt!!!",
+
+  });
+ })
+
 module.exports = router;
