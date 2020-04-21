@@ -61,8 +61,7 @@ router.get('/about', function(req, res) {
     brandName:'Von | Fitness & BJJ',
     pageTitle: 'About',
     aboutImg: "/images/me_Capt.jpg",
-    aboutDesc: 
-    "I am a Brazilian Jiu-Jitsu and Self-Defense expert, Strength Coach and Nutrition Coach. I love teaching people about their body and while helping them develop a better connection and appreciation for themselves. My fitness journey began in 2009 on deployment to the Persian Gulf with the US Navy. The long hours and stressful work environment forced me to carve out time for myself to be at peace and work on my mental and physical health. So, after my shift, I found myself in the gym teaching myself how to perform a pullup and perform other hand balancing exercises that challenged my core strength and physical abilities. But eventually those exercise weren’t enough, and it wasn’t until I found jiujitsu where I felt true peace and mental focus. Fitness and martial arts has taught me the importance of self-care not only on the physical level but on the mental and emotional level as well. Fast forward 10 years and many competitions later my body began to breakdown and I found myself in the gym again. Fitness and martial arts has taught me the importance of self-care not only on the physical level but on the mental and emotional level as well. My mission is to help people tap into their own unique potential that helps them feel strong, capable and the masters of their lives. I have experienced first hand the impact that fitness and martial arts can have on developing a better connection and appreciation for oneself and I want to share that experience with my clients.",
+    aboutTag: "JIUJITSU, SELF-DEFENSE, STRENGTH and LIFE",
     aboutBtn: "LET'S TALK!",
     aboutURL: "/contact"
 
