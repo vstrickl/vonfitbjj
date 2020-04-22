@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
       coverTitleimg: '/images/Typography/strngth_bjj.svg',
       aboutTitle: "Hey, I'm Von",
       aboutDescription: 
-      "I'm Your Expert on strength and mobility for JiuJitsu and Self-Defense. ​​​​​​I can work with you Online or In-person.",
+      "I'm Your Source for strength and mobility for JiuJitsu and Self-Defense. ​​​​​​I can work with you Online or In-person.",
       aboutAppt: "Click the link below to schedule a free consultation with me ;)",
       aboutBtn: "SCHEDULE A CALL",
       aboutImg: "/images/me_narrow.jpg",
