@@ -4,11 +4,6 @@
 Northern California (Silicon Valley)
 [vstrickl.git@gmail.com](mailto:vstrickl.git@gmail.com)
 
-### Vonique Stricklen
-### WEB DEVELOPER  
-Northern California (Silicon Valley)
-[vstrickl.git@gmail.com](mailto:vstrickl.git@gmail.com)
-
 ## SUMMARY
 Front-End web developer adept in building consumer facing static (Express) and dynamic (WordPress) websites. Skilled JavaScript and Node.js programmer with a fine eye for aesthetics. Charismatic troubleshooter that offers clear and simple solutions for complex problems.
 
