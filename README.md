@@ -13,7 +13,7 @@ Front-End web developer adept in building consumer facing static (Express) and d
 
 ### Von | Fitness & BJJ - Web Developer
 Sep 2018 - Present  
-[vonfitbjj.com](http://vonfitbjj.com/) | [mobile](http://m.vonfitbjj.com/)  
+[vonfitbjj.com](http://vonfitbjj.com/) | [blog](http://blog.vonfitbjj.com/) | [mobile](http://m.vonfitbjj.com/)    
 
 Hard coded customer facing website with Express Node.js. Utilized Social Media marketing skills to drive consumer interest. Updated Blog with WordPress Content Management System. Introduced Divi to the company to improve the look and feel of content. Added Shopify to create an online eCommerce store for customers to purchase personal training and private Brazilian JiuJisu sessions. Maintained changes and streamed lined workflow using the Git version control system.  
   
