@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Von | Fitness & BJJ`,
-    description: `A Fitness and JiuJitsu Website.`,
+    title: `Gatsby Default Starter`,
+    description: `A fitness and JiuJitsu Blog`,
     author: `Vonique Stricklen <vstrickl.git@gmail.com>`,
   },
   plugins: [

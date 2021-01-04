@@ -70,6 +70,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       })
     })
   })
-  // Queries for articles and authors nodes to use in creating pages.
+
+  // Query for articles nodes to use in creating pages.
   return Promise.all([getPosts, getAuthors])
 }

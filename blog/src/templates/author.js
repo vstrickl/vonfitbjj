@@ -9,9 +9,9 @@ const UserTemplate = ({ data }) => (
       {data.strapiUser.posts.map(post => (
         <li key={post.id}>
           <h2>
-            <Link to={`/Post_${post.id}`}>{post.Title}</Link>
+            <Link to={`/Post_${post.id}`}>{post.title}</Link>
           </h2>
-          <p>{post.Content}</p>
+          <p>{post.content}</p>
         </li>
       ))}
     </ul>
@@ -27,8 +27,8 @@ export const query = graphql`
       username
       posts {
         id
-        Title
-        Content
+        title
+        content
       }
     }
   }

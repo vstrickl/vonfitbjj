@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
@@ -11,9 +12,10 @@ const IndexPage = ({ data }) => (
       {data.allStrapiPost.edges.map(document => (
         <li key={document.node.id}>
           <h2>
-            <Link to={`/${document.node.id}`}>{document.node.Title}</Link>
+            <Link to={`/${document.node.id}`}>{document.node.title}</Link>
           </h2>
-          <p>{document.node.Content}</p>
+          <Img fixed={document.node.image.childImageSharp.fixed} alt="" />
+          <p>{document.node.content}</p>
         </li>
       ))}
     </ul>
@@ -29,8 +31,15 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          Title
-          Content
+          title
+          content
+          image {
+            childImageSharp {
+              fixed(width: 200, height: 125) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       }
     }

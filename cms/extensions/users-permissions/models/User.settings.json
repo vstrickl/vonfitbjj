@@ -53,19 +53,17 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "posts": {
-      "collection": "post",
-      "via": "Author"
-    },
-    "firstName": {
-      "type": "string",
-      "required": true,
-      "unique": true,
-      "private": false
-    },
-    "lastName": {
+    "firstname": {
       "type": "string",
       "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "via": "author",
+      "collection": "post"
     }
   }
 }

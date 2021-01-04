@@ -5,15 +5,15 @@ import Layout from "../components/layout"
 
 const PostTemplate = ({ data }) => (
   <Layout>
-    <h1>{data.strapiPost.Title}</h1>
+    <h1>{data.strapiPost.title}</h1>
     <p>
       by{" "}
-      <Link to={`/authors/User_${data.strapiPost.Author.id}`}>
-        {data.strapiPost.Author.username}
+      <Link to={`/authors/User_${data.strapiPost.author.id}`}>
+        {data.strapiPost.author.username}
       </Link>
     </p>
-    <Img fixed={data.strapiPost.Image.childImageSharp.fixed} />
-    <p>{data.strapiPost.Content}</p>
+    <Img fixed={data.strapiPost.image.childImageSharp.fixed} />
+    <p>{data.strapiPost.content}</p>
   </Layout>
 )
 
@@ -22,16 +22,16 @@ export default PostTemplate
 export const query = graphql`
   query PostTemplate($id: String!) {
     strapiPost(id: { eq: $id }) {
-      Title
-      Content
-      Image {
+      title
+      content
+      image {
         childImageSharp {
           fixed(width: 200, height: 125) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      Author {
+      author {
         id
         username
       }
