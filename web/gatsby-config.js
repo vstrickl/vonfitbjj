@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `A fitness and JiuJitsu Blog`,
-    author: `Vonique Stricklen <vstrickl.git@gmail.com>`,
+    title: `vonfitbjj`,
+    description: `A fitness and BJJ Blog.`,
+    author: `Vonique Stricklen<vstrickl.git@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,20 +13,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: "http://localhost:1337",
         contentTypes: [
-          // List of the Content Types you want to be able to request from Gatsby.
           "post",
-          "user",
+          "category",
         ],
         queryLimit: 1000,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

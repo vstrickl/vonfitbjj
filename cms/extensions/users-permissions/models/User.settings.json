@@ -6,6 +6,7 @@
     "description": ""
   },
   "options": {
+    "draftAndPublish": false,
     "timestamps": true
   },
   "attributes": {
@@ -37,6 +38,11 @@
       "configurable": false,
       "private": true
     },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
     "confirmed": {
       "type": "boolean",
       "default": false,
@@ -54,15 +60,13 @@
       "configurable": false
     },
     "firstname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "lastname": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
-    "posts": {
-      "via": "author",
+    "post": {
+      "via": "Author",
       "collection": "post"
     }
   }
