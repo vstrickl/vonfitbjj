@@ -6,19 +6,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./slider.scss"
 
+import CoverImg from 'gatsby-background-image';
 import Slider from "react-slick";
 
-const SliderContainer = styled.div`
-  background-image: url(${props => props.img});
-  color: white;
-  padding: 10rem 0;
-  background-size: cover;
-  height: 300px;
-`
-
 const LeadWrapper = styled.div`
+  color: white;
   text-align: center;
-  transform: translate(160px, 40px);
 `
 
 const Headline = styled.div`
@@ -53,8 +46,8 @@ export default function Cover() {
         subheadline
         cover_img {
           childImageSharp {
-            fluid(maxWidth: 1280) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 1360) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -63,7 +56,10 @@ export default function Cover() {
   `)
 
   return (
-    <SliderContainer img={data.site.siteMetadata.image}>
+    <CoverImg
+      Tag="section"
+      fixed={data.strapiCoverImg.cover_img.childImageSharp.fixed}
+    >
       <Slider {...settings}>
         <LeadWrapper>
           <Headline>
@@ -74,6 +70,6 @@ export default function Cover() {
           </SubHeadline>
         </LeadWrapper>
       </Slider>
-    </SliderContainer>
+    </CoverImg>
   )
 }
