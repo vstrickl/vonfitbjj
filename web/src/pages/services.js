@@ -1,16 +1,37 @@
 import React from "react"
+import styled from "styled-components"
+
+import { Row, Col } from 'reactstrap'
 
 import Layout from "../components/layout"
-import Header from "../components/header"
+
+const PageTitle = styled.h1`
+  text-align: center;
+  margin-bottom: 40px;
+`
+
+const Pitch = styled.h3`
+  text-align: center;
+`
+
+const ServicesWrapper = styled.p`
+  text-align: center;
+`
 
 export default function Services() {
   return (
     <Layout>
-      <Header headerText="Work With Me" />
-      <div>
-          <p>Group Classes</p>
-          <p>1-1 Coaching</p>
-      </div>
+      <PageTitle>Sales Page</PageTitle>
+      <Row>
+        <Col>
+          <Pitch>Coming Soon!</Pitch>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <ServicesWrapper>List of services goes here...</ServicesWrapper>
+        </Col>
+      </Row>
     </Layout>
   )
 }

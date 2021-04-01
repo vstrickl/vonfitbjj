@@ -9,6 +9,10 @@ import "./slider.scss"
 import CoverImg from 'gatsby-background-image';
 import Slider from "react-slick";
 
+const BannerImg = styled(CoverImg)`
+  margin: 0 40px;
+`
+
 const LeadWrapper = styled.div`
   color: white;
   text-align: center;
@@ -32,16 +36,12 @@ export default function Cover() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
-  };
+  }
 
   const data = useStaticQuery(graphql`
     query SliderQuery {
-      site {
-        siteMetadata {
-          image
-        }
-      }
-      strapiCoverImg {
+      coverImg: strapiCoverImg {
+        cta_url
         headline
         subheadline
         cover_img {
@@ -55,21 +55,30 @@ export default function Cover() {
     }
   `)
 
+  const coverImg = data.coverImg
+
   return (
-    <CoverImg
+    <BannerImg
       Tag="section"
-      fixed={data.strapiCoverImg.cover_img.childImageSharp.fixed}
+      fixed={coverImg.cover_img.childImageSharp.fixed}
     >
       <Slider {...settings}>
         <LeadWrapper>
           <Headline>
-            {data.strapiCoverImg.headline}
+            {coverImg.headline}
           </Headline>
           <SubHeadline>
-            {data.strapiCoverImg.subheadline}
+            {coverImg.subheadline}
           </SubHeadline>
+          <a
+            href={coverImg.cta_url}
+            class="btn btn-warning m-4"
+            role="button"
+          >
+            CTA
+          </a>
         </LeadWrapper>
       </Slider>
-    </CoverImg>
+    </BannerImg>
   )
 }

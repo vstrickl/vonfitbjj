@@ -1,8 +1,8 @@
 {
-  "kind": "singleType",
-  "collectionName": "cover-img",
+  "kind": "collectionType",
+  "collectionName": "social_medias",
   "info": {
-    "name": "CoverImg",
+    "name": "Social Media",
     "description": ""
   },
   "options": {
@@ -11,26 +11,21 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "cover_img": {
+    "social_icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
-    "headline": {
-      "type": "string",
-      "required": true
+    "social_url": {
+      "type": "string"
     },
-    "subheadline": {
-      "type": "text",
-      "required": true
-    },
-    "cta_url": {
+    "social_account": {
       "type": "string"
     }
   }

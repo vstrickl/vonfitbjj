@@ -1,20 +1,15 @@
-import React from "react"
+import * as React from "react"
 
 import Slider from "../components/slider";
 import Layout from "../components/layout"
+import About from "../components/about"
 
 export default function Home() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
 
   return (
     <Layout>
-        <Slider />
+      <Slider />
+      <About />
     </Layout>
   )
 }

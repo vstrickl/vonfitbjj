@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "name": "services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "service_name": {
+      "type": "string"
+    },
+    "service_img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "purchase_url": {
+      "type": "string"
+    },
+    "service_desc": {
+      "type": "richtext"
+    },
+    "provider": {
+      "type": "enumeration",
+      "enum": [
+        "calendly",
+        "stripe"
+      ]
+    }
+  }
+}

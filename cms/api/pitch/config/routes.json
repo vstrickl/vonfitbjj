@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/cover-img",
-      "handler": "cover-img.find",
+      "path": "/pitch",
+      "handler": "pitch.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/cover-img",
-      "handler": "cover-img.update",
+      "path": "/pitch",
+      "handler": "pitch.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/cover-img",
-      "handler": "cover-img.delete",
+      "path": "/pitch",
+      "handler": "pitch.delete",
       "config": {
         "policies": []
       }

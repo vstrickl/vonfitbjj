@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "cover-img",
+  "collectionName": "abouts",
   "info": {
-    "name": "CoverImg",
+    "name": "About",
     "description": ""
   },
   "options": {
@@ -11,27 +11,22 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "cover_img": {
+    "about_intro": {
+      "type": "string"
+    },
+    "about_desc": {
+      "type": "richtext"
+    },
+    "about_img": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "headline": {
-      "type": "string",
-      "required": true
-    },
-    "subheadline": {
-      "type": "text",
-      "required": true
-    },
-    "cta_url": {
-      "type": "string"
+      "required": false
     }
   }
 }

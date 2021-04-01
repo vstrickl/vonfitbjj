@@ -64,10 +64,6 @@
     },
     "lastname": {
       "type": "string"
-    },
-    "post": {
-      "via": "Author",
-      "collection": "post"
     }
   }
 }

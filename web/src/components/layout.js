@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
+import ChatBox from "./chat"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 const Container = styled.div`
   margin: 1rem auto;
@@ -33,6 +35,8 @@ export default function Layout({ children }) {
     <Container>
         <Navbar />
         {children}
+        <ChatBox />
+        <Footer />
     </Container>
   )
 }

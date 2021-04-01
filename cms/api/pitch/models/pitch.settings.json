@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pitches",
+  "info": {
+    "name": "Pitch",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "sales_pitch": {
+      "type": "string"
+    }
+  }
+}
